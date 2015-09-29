@@ -12,6 +12,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       end
     end
   end
+
   
   private 
   def select_plan
