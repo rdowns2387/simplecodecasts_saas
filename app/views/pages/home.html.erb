@@ -3,13 +3,13 @@
     <h3>A membership site where entrepeneurs can meet developers.</h3>
 </div>
 <div class="row">
-    <% if #user_signed_in? %>
+    <% if user_signed_in? %>
         <div class="col-md-6">
             <div class="well">
                 <h2 class="text-center">Your Profile</h2>
                 <% if current_user.profile %>
                     <%= link_to "View your Profile", user_path(current_user), class: "btn btn-primary btn-block" %>
-                    <%= link_to "Edit your Profile", edit_user_profile_path(current_user), class: "btn btn-primary btn-block"%>
+                    <%= link_to "Edit your Profile", edit_user_profile_path(current_user), class: "btn btn-primary btn-block" %>
                 <% else %>
                     <p class="text-center">Create your profile to share with the community!</p>
                     <%= link_to "Create your profile", new_user_profile_path(current_user), class: "btn btn-primary btn-block" %>

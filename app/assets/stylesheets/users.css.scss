@@ -11,9 +11,6 @@
 
 .user-avatar {
     border-radius: 50%;
-    -webkit-box-shadow: 4px 3px 0px 0px rgba(50, 50, 50, 0.4);
-    -moz-box-shadow: 4px 3px 0px 0px rgba(50, 50, 50, 0.4);
-    box-shadow: 4px 3px 0px 0px rgba(50, 50, 50, 0.4);
 }
 
 .well.profile_block {
@@ -33,3 +30,6 @@
     border-color: #46b8da;
 }
 
+.well.white-bg {
+    background-color: #fff;
+}
