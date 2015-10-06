@@ -5,6 +5,9 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+body {
+    font-family: Raleway;
+}
 .navbar {
     // Gradient from uigradients.com
     background: -webkit-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* Chrome 10+, Saf5.1+ */
@@ -12,11 +15,103 @@
     background:     -ms-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* IE10 */
     background:      -o-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* Opera 11.10+ */
     background:         linear-gradient(90deg, #136a8a 10%, #267871 90%); /* W3C */
+    margin-bottom: 0px;
+    border: none;
         
+}
+.join-header {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: black;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a:active,
+.navbar-inverse .navbar-nav > li > a:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
 }
 
 .alert-notice {
     color: #8a6d3b;
     background-color: #fcf8e3;
     border-color: #faebcc;
+}
+
+.home-page {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url('/system/img/dev-match-jumbotron.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    color: #fff;
+    height: 400px;
+}
+
+.well.membership {
+    padding: 0px;
+    background-color: white;
+}
+
+.jumbotron.basic-membership {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url('/system/img/basic.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    color: white;
+    margin-top: 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.jumbotron.pro-membership {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url('/system/img/pro.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    color: white;
+    margin-top: 0px;
+    border-radius: 4px 4px 0px 0px;
+
+}
+
+.btn {
+    border-radius: 100px;
+    background: -webkit-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #136a8a 10%, #267871 90%); /* W3C */
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
